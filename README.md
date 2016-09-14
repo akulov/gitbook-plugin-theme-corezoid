@@ -1,2 +1,1 @@
-# gitbook-plugin-theme-corezoid
-Gitbook custom theme for Corezoid docs
+# Gitbook custom theme for Corezoid docs
