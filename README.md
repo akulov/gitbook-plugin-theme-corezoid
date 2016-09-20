@@ -1,4 +1,4 @@
-# Тема офоромления Gitbook к документации облачной ОС Corezoid
+# Тема оформления Gitbook к документации облачной ОС Corezoid
 
 Это тема оформления в виде плагина для GitBook начиная с версии 3.0.0.
 
@@ -8,7 +8,7 @@
 
 Плагин можно использовать как шаблон-заготовку темы для GitBook.
 
-![Image](https://github.com/akulov/gitbook-plugin-theme-corezoid/blob/master/preview.png)
+![Image](https://github.com/akulov/gitbook-plugin-theme-corezoid/raw/master/preview.png)
 
 ## Установка
 
