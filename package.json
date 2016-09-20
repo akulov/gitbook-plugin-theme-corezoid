@@ -1,4 +1,25 @@
 {
   "name": "gitbook-plugin-theme-corezoid",
-  "version": "0.0.1"
+  "version": "1.0.0",
+  "description": "Gitbook custom theme for Corezoid docs",
+  "keywords": [
+    "gitbook",
+    "theme",
+    "corezoid"
+  ],
+  "license": "GPLv3",
+  "author": {
+    "name": "Andrey Akulov"
+  },
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/akulov/gitbook-plugin-theme-corezoid.git"
+  },
+  "bugs": {
+    "url": "https://github.com/akulov/gitbook-plugin-theme-corezoid/issues"
+  },
+  "engines": {
+    "gitbook": ">=3.0.0"
+  }
 }
