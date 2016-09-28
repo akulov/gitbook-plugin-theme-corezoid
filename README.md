@@ -1,18 +1,18 @@
-# Тема оформления Gitbook к документации облачной ОС Corezoid
+# Gitbook custom theme for Corezoid cloud OS documentation
 
-Это тема оформления в виде плагина для GitBook начиная с версии 3.0.0.
+This is a plugin for Gitbook since version 3.0.0.
 
-Плагин добавляет новый блок с логотипом и списком языков, расширяя HTML шаблоны, CSS стили, JS скрипты базовой темы оформления [gitbook-plugin-theme-default](https://www.npmjs.com/package/gitbook-plugin-theme-default).
+It adds a new block with logo and list of languages. Corezoid theme extends HTML templates, CSS styles and JS scripts of a base GitBook theme [gitbook-plugin-theme-default](https://www.npmjs.com/package/gitbook-plugin-theme-default).
 
-Дополнительно сделан перевод заголовка результата поиска, отсутствующий в русской локализации (ru.json).
+Additionally, translated title of the search result that does not exist in the Russian localization (ru.json).
 
-Плагин можно использовать как шаблон-заготовку темы для GitBook.
+The plugin can be used as a blank theme template for GitBook.
 
 ![Image](https://github.com/akulov/gitbook-plugin-theme-corezoid/raw/master/preview.png)
 
-## Установка
+## Usage
 
-Добавить плагин темы в файл конфигурации книги `book.json`:
+Add the theme to your book's configuration `book.json`:
 
 ```js
 {
@@ -22,8 +22,12 @@
 }
 ```
 
-И выполнить установку командой:
+Install by command:
 
 ``` bash
 gitbook install
 ```
+
+## Links
+
+This theme on [github.com](https://github.com/akulov/gitbook-plugin-theme-corezoid), [plugins.gitbook.com](https://plugins.gitbook.com/plugin/theme-corezoid), [npmjs.com](https://www.npmjs.com/package/gitbook-plugin-theme-corezoid)
