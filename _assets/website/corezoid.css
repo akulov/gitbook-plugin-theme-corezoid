@@ -1,71 +1,95 @@
-.body-wrapper {
-  width: 100%;
-  height: 100%;
+.book-summary,
+.book-body{
+  top: 51px;
 }
 
-header {
-  background: #fff;
-  color: #008cff;
+.book.color-theme-1 .header-inner{
+  background: #f3eacb;
 }
 
-header .header-inner {
+.book.color-theme-2 .header-inner{
+  background: #1c1f2b;
+}
+
+.header-inner #book-search-input {
+  float: right;
+  margin: 5px 0 0 0;
+  padding: 0;
+  border: 1px solid rgba(0,0,0,.07);
+}
+
+.header-inner{
   width: 100%;
   padding: 0 10px;
-  border-bottom: 1px solid rgba(0,0,0,.07);
+  border-bottom: 1px solid rgba(0, 0, 0, .07);
   margin: auto;
   *zoom: 1;
 }
 
-header .header-inner:before,
-header .header-inner:after {
+.header-inner:before,
+.header-inner:after{
   content: " ";
   display: table;
   line-height: 0;
 }
 
-header .header-inner:after {
+.header-inner:after{
   clear: both;
 }
 
-header .header-inner .logo {
+.header-inner .logo{
   float: left;
-}
-
-header .header-inner .logo a {
   height: 50px;
-  line-height: 50px;
-  display: inline-block;
 }
 
-header .header-inner .logo a img {
+.header-inner .logo img{
   display: block;
-  height: 50px;
+  height: inherit;
+  padding: 5px 0;
 }
 
-header .header-inner .langs {
+.header-inner .langs{
   list-style: none;
-  margin: 0;
+  margin: 0 0 0 30px;
   padding: 0;
   float: right;
-}
-
-header .header-inner .langs li {
-  display: inline-block;
+  display: table;
   height: 50px;
-  line-height: 50px;
+}
+
+.header-inner .langs li{
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.header-inner .langs li a{
+  transition: opacity .6s;
+  text-indent: -9999px;
   margin-right: 15px;
+  opacity: 0.3;
 }
 
-header .header-inner .langs li a {
-  font-size: 14px;
-  padding-bottom: 3px;
-  color: #333;
-  border-bottom: 1px solid transparent;
-  transition: border .6s;
+.header-inner .langs li a:hover,
+.header-inner .langs li a.active{
+  opacity: 1;
+  transition: opacity .6s;
 }
 
-header .header-inner .langs li a:hover {
-  color: #008cff;
-  border-bottom: 1px solid #008cff;
-  transition: border .6s;
+.header-inner .langs li a.active:hover{
+  cursor: default;
+}
+
+.flag{
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  background: url('images/flags.png') no-repeat;
+}
+
+.flag.flag-en{
+  background-position: 0 0;
+}
+
+.flag.flag-ru{
+  background-position: -32px 0;
 }
