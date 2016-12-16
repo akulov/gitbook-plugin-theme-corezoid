@@ -19,6 +19,14 @@ Add the theme to your book's configuration `book.json`:
     "plugins": [
         "theme-corezoid"
     ]
+},
+"variables": {
+    "themeCorezoid": {
+        "langs": [
+            "ru",
+            "en"
+        ]
+    }
 }
 ```
 
