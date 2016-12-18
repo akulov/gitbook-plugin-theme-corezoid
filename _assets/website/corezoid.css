@@ -1,21 +1,69 @@
+/*Book inner page*/
 .book-summary,
 .book-body{
   top: 51px;
 }
 
-.book.color-theme-1 .header-inner{
+.book.color-theme-1{
   background: #f3eacb;
+}
+
+.book.color-theme-2{
+  background: #2d3143;
+}
+
+.book.color-theme-1 .header-inner{
+  background: #111111;
 }
 
 .book.color-theme-2 .header-inner{
   background: #1c1f2b;
 }
 
-.header-inner #book-search-input {
+.header-inner #book-search-input{
   float: right;
-  margin: 5px 0 0 0;
+  margin: 5px 0;
   padding: 0;
-  border: 1px solid rgba(0,0,0,.07);
+  border: 1px solid rgba(0, 0, 0, .07);
+  background: #fafafa;
+}
+
+.header-inner #book-search-input.focus{
+  border-color: #4183c4;
+}
+
+.book.color-theme-1 .header-inner #book-search-input{
+  background: #f3eacb;
+  color: #111111;
+}
+
+.book.color-theme-1 .header-inner #book-search-input.focus{
+  border-color: #704214;
+}
+
+.book.color-theme-2 .header-inner #book-search-input.focus{
+  border-color: #3eb1d0;
+}
+
+.book.color-theme-1 #book-search-results .search-results .has-results .search-results-item{
+  color: #704214;
+}
+
+.book.color-theme-1 #book-search-results .search-results .has-results .search-results-item a{
+  color: inherit;
+}
+
+.book.color-theme-2 .header-inner #book-search-input{
+  background: #2d3143;
+  color: #c1c6d7;
+}
+
+.book.color-theme-2 #book-search-results .search-results .has-results .search-results-item{
+  color: #bdcadb;
+}
+
+.book.color-theme-2 #book-search-results .search-results .has-results .search-results-item a{
+  color: #3eb1d0;
 }
 
 .header-inner{
@@ -93,3 +141,34 @@
 .flag.flag-ru{
   background-position: -32px 0;
 }
+
+@media (max-width: 768px){
+  .book-summary,
+  .book-body{
+    top: 101px;
+  }
+
+  .header-inner #book-search-input{
+    clear: both;
+    width: 100%;
+  }
+}
+
+/*Book inner page end*/
+
+/*Page select langs*/
+.book-langs-index .inner{
+  text-align: center;
+}
+
+.book-langs-index .inner .logo{
+  max-width: 200px;
+  margin-bottom: 40px;
+  display: inline-block;
+}
+
+.book-langs-index .inner .logo img{
+  max-width: 100%;
+}
+
+/*Page select langs end*/

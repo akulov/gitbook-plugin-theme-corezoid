@@ -1,0 +1,28 @@
+{% extends template.self %}
+
+{% block title %}{{ "LANGS_CHOOSE"|t }} · {{ super() }}{% endblock %}
+
+{% block head %}
+{{ super() }}
+<link rel="stylesheet" href="{{ "corezoid.css"|resolveAsset }}">
+{% endblock %}
+
+{% block body %}
+<div class="book-langs-index" role="navigation">
+    <div class="inner">
+        <a class="logo" href="//corezoid.com">
+            <img src="{{ "images/logo-corezoid.svg"|resolveAsset }}" alt="Corezoid">
+        </a>
+
+        <h3>{{ "LANGS_CHOOSE"|t }} / Выберите язык</h3>
+
+        <ul class="languages">
+        {%  for lang in languages.list %}
+            <li>
+                <a href="{{ (lang.id + "/README.md")|contentURL }}">{{ lang.title }}</a>
+            </li>
+        {% endfor %}
+        </ul>
+    </div>
+</div>
+{% endblock %}
