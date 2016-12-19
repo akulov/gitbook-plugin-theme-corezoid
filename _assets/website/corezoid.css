@@ -22,6 +22,7 @@
 
 .header-inner #book-search-input{
   float: right;
+  width: 350px;
   margin: 5px 0;
   padding: 0;
   border: 1px solid rgba(0, 0, 0, .07);
